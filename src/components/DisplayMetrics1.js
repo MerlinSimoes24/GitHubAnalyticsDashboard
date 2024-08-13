@@ -25,7 +25,7 @@ ChartJS.register(
   Legend
 );
 const GITHUB_API_BASE_URL = 'https://api.github.com/repos';
-const GITHUB_ACCESS_TOKEN = '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'; // Replace with your GitHub access token
+const GITHUB_ACCESS_TOKEN = ''; // Replace with your GitHub access token
 
 const DisplayMetrics = () => {
   const [commitData, setCommitData] = useState({});

@@ -1,0 +1,42 @@
+.dashboard-container {
+    margin: 50px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .date-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    label {
+      margin-right: 10px;
+    }
+  
+    input {
+      margin-right: 20px;
+    }
+  
+    .apply-btn {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .apply-btn:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }

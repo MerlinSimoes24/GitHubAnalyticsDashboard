@@ -1,0 +1,174 @@
+/* Dashboard.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #2c3e50 !important;
+    color: #ecf0f1 !important;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ecf0f1;
+    color: #333;
+  }
+  
+  th {
+    background: #2980b9;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    display: table-cell;
+  }
+  
+  a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Switch Styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 17px; /* Make switches curved */
+    overflow: hidden;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 17px; /* Make switches curved */
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%; /* Make the slider round */
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Make the dropdown container curved */
+    padding: 20px;
+    min-width: 200px; /* Set a minimum width */
+    display: none;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  /* Settings Button Styles */
+  .settings-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .settings-icon {
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Display Options Styles */
+  .display-options {
+    margin-bottom: 10px;
+  }
+  
+  .display-options h3 {
+    color: #2980b9;
+  }
+  
+  .display-options div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .display-options span {
+    margin-right: 10px;
+  }
+  
+  /* Logout Button Styles */
+  .logout-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  /* Overlay Styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
